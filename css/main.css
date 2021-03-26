@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
   --primary-color: #007af3;
 }
@@ -6,7 +6,7 @@
 body {
   background: #f2f2f2;
   margin: 0;
-  font-family: "Lexend", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
@@ -18,7 +18,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   color: black;
-  font-size: 1.2em;
+  font-size: 1.2;
 }
 
 .navbar .logo span {
@@ -59,7 +59,7 @@ section {
 .left-col .subhead {
   text-transform: uppercase;
   font-weight: bold;
-  color: gray;
+  color: grey;
   letter-spacing: 0.3em;
 }
 
@@ -67,6 +67,7 @@ section {
   font-size: 2.5em;
   line-height: 1.3em;
   margin-top: 0.2em;
+  font-weight: bold;
 }
 
 .left-col .primary-cta {
@@ -90,8 +91,9 @@ section {
 }
 
 .hero-img {
-  width: 70%;
+  width: 80%;
   margin-top: 3em;
+  border-radius: 10%;
 }
 
 section.features-section {
@@ -126,6 +128,8 @@ ul.features-list li:before {
 
 .features-section img {
   display: none;
+  border-radius: 5%;
+  margin-right: 2em;
 }
 
 .testimonials-section {
@@ -133,12 +137,16 @@ ul.features-list li:before {
   color: white;
 }
 
+.testimonials-section cite {
+  font-weight: bold;
+}
+
 .testimonials-section li {
   background: #006bd6;
-  text-align: left;
+  text-align: center;
   padding: 2em 1em;
   width: 80%;
-  margin: 0 auto 3em auto;
+  margin: 0 auto 5em auto;
   border-radius: 1em;
 }
 
@@ -171,7 +179,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   color: white;
   font-weight: bold;
   font-size: 1.3em;
@@ -200,33 +208,30 @@ nav {
   right: 0;
   top: 0;
   background: var(--primary-color);
-  height: 55vh;
-  padding: 0em;
+  height: 50vh;
+  padding: 1em;
 }
 
 nav ul.primary-nav {
-  margin-top: 4em;
-  margin-left: 2em;
-  margin-right: 2em;
-  width: 85%;
+  margin-top: 5em;
 }
 
 nav li a {
   color: white;
-  text-decoration: none;
   display: block;
   padding: 0.5em;
   font-size: 1.3em;
-  text-align: center;
+  text-align: right;
 }
 
 nav li a:hover {
   font-weight: bold;
+  text-decoration: none;
 }
 
 .mobile-menu-exit {
   float: right;
-  margin: 0.5em;
+  margin: 0.5;
   cursor: pointer;
 }
 
@@ -254,7 +259,7 @@ nav li a:hover {
   }
   .navbar nav a {
     color: black;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 0.1em 1em;
   }
   .navbar nav ul.primary-nav {
@@ -335,6 +340,7 @@ nav li a:hover {
   }
   .contact-section {
     position: relative;
+    margin-bottom: 0;
   }
   .contact-section .container {
     display: flex;
@@ -347,7 +353,10 @@ nav li a:hover {
     height: 100%;
   }
   .contact-right iframe {
-    height: 100%;
+    height: 75%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border-radius: 5%;
   }
 }
 
@@ -364,11 +373,11 @@ nav li a:hover {
   .features-section:after {
     content: "";
     position: absolute;
-    width: 800px;
-    height: 40em;
+    width: 200px;
+    height: 20em;
     background: url("../images/dots.svg") no-repeat;
-    left: 6.5em;
-    top: 3em;
+    left: 4.5em;
+    top: 2em;
   }
 }
 
@@ -388,18 +397,18 @@ nav li a:hover {
 }
 
 .footer-basic li {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .footer-basic ul a {
-  color: var(--primary-color);
+  color: #444444;
   font-weight: bold;
   text-decoration: none;
   opacity: 0.8;
 }
 
 .footer-basic ul a:hover {
-  opacity: 1;
+  color: var(--primary-color);
 }
 
 .footer-basic .social {
@@ -428,7 +437,7 @@ nav li a:hover {
 .footer-basic .copyright {
   margin-top: 15px;
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
   color: var(--primary-color);
   margin-bottom: 0;
 }
